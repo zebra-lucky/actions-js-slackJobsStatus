@@ -1,0 +1,15 @@
+{
+  "name": "gh-actions-slack-jobs-status",
+  "version": "0.0.1",
+  "description": "Notify Slack on workflow jobs summary status",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/ncc build index.js --license licenses.txt"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@slack/webhook": "^5.0.3",
+    "@vercel/ncc": "^0.27.0"
+  }
+}

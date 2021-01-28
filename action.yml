@@ -1,0 +1,12 @@
+name: 'Slack Jobs Status'
+description: 'Notify Slack on workflow jobs summary status'
+inputs:
+  jobs:
+    description: 'Content of `needs` as JSON'
+    required: true
+  gh_ctx:
+    description: 'GitHub context for worklfow run'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
